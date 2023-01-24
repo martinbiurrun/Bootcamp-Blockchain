@@ -1,0 +1,68 @@
+{
+	"id": "3cf07a19c92ff3f568b09211bb67541a",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"estructura_datos.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.7;\r\n\r\n// Tipos de estructuras de datos\r\n\r\n/*\r\n\r\n    Struct\r\n      \r\n      Las estructuras nos permiten definir tipos de datos mas complejos\r\n\r\n        struct <nombre_estrucura> {\r\n             <data_type_1> <nombre_variable_1>;\r\n        <data_type_2> <nombre_variable_2>;\r\n        <data_type_3> <nombre_variable_3>;\r\n        ...\r\n        }\r\n\r\n\r\n    Mapping\r\n      \r\n      Asociacion clave-valor para guardar y ver datos\r\n    \r\n        mapping (_keyType => _valueType) [public]* <nombre_mapping>;\r\n\r\n\r\n    Arrays\r\n\r\n      Tipo de dato estructurado que almacena un conjunto homogeneo de datos\r\n\r\n        <tipo_dato> [] [public]* <nombre_array>;\r\n\r\n*/"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"estructura_datos.sol": {
+				"ast": {
+					"absolutePath": "estructura_datos.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						}
+					],
+					"src": "33:669:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

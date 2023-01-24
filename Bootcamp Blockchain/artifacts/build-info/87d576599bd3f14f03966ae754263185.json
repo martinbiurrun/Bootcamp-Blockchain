@@ -1,0 +1,68 @@
+{
+	"id": "87d576599bd3f14f03966ae754263185",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"variables.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.7;\r\n\r\n// Variables\r\n\r\n/*\r\n\r\nEn una variable guardamos y recuperamos los datos que usan en el contrato\r\n\r\n        <tipo_dato> <nombre_variable>;\r\n\r\nPara inicializar una variable:\r\n\r\n        <tipo_dato> <nombre_variable> = <valor>;\r\n\r\nTipos de Variables\r\n\r\n    Entera\r\n        uint <nombre_variable>;\r\n        int <nombre_variable>; (con signo)\r\n\r\n    String\r\n        string <nombre_variable>;\r\n\r\n    booleano\r\n        bool <nombre_variable>;\r\n\r\n    bytes\r\n        bytes<x> <nombre_variable>;\r\n\r\n    address\r\n        address <nombre_variable>;\r\n\r\n    enum\r\n        enum <nombre_enumeracion> {valores_enumeracion};\r\n\r\n\r\nTipos de modificadores\r\n\r\n    public: Crea una funcion getter\r\n        <tipo_dato> public <nombre_variable>;\r\n    \r\n    private: Solo son visibles dentro del Smart Contract. Estara disponible si hacemos una herencia\r\n        <tipo_dato> private <nombre_variable>;\r\n\r\n    internal: Solo son accesibles internamente. No estara disponible aunque hagamos una herencia\r\n        <tipo_dato> internal <nombre_variable>;\r\n\r\n    memory: Guardado de manera temporal\r\n        <tipo_dato> memory <nombre_variable>;\r\n    \r\n    storage: Guardado permanente en la blockchain\r\n        <tipo_dato> storage <nombre_variable>;\r\n\r\n    payable: Permite enviar y recibir ether\r\n        address payable <nombre_variable>;\r\n\r\n* public, private e internal no se pueden combinar entre si\r\n  memory y storage no se pueden combinar entre si\r\n\r\n* Storage cuesta dinero ya que se guarda en la blockchain, a diferencia de memory que crea un dato volatil, que no va a tener costo ya que no se guarda en la blockchain.\r\n\r\n*/\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"variables.sol": {
+				"ast": {
+					"absolutePath": "variables.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						}
+					],
+					"src": "33:1631:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

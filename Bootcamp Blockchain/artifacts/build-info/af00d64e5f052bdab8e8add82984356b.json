@@ -1,0 +1,71 @@
+{
+	"id": "af00d64e5f052bdab8e8add82984356b",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"intro.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.8.0 <0.9.0;\r\n\r\n// Documentacion de Solidity: https://docs.soliditylang.org/en/v0.8.13/index.html\r\n\r\n\r\n// Version\r\n\r\n// Especificamos la version que debe usar el compilador\r\n//   Con una version especifica\r\n//      pragma solidity ^0.8.0;\r\n\r\n//   Con un rango de versiones\r\n//      pragma solidity >=0.6.0 <0.8.0;\r\n\r\n/**/ // para comentar\r\n\r\n// Imports\r\n//    \"./\" Significa en el mismo repositorio\r\n//      import \"./<nombre_contrato>.sol\"; para un contrato particular\r\n//      import {<contratos>} from \"./<nombre_contrato>.sol\"; para varios contratos\r\n\r\n//      Importacion de un repositorio externo\r\n//      import \"@openzeppelin/contracts@4.5.0/token/ERC721/ERC721.sol\";\r\n\r\n// Creacion de un Smart Contract\r\n/*\r\n\r\n    contract <nombre_contrato>{\r\n        ...\r\n    }\r\n\r\n*/\r\n\r\n\r\n// Consructor\r\n/*\r\n\r\n    constructor(){\r\n        ...\r\n    }\r\n\r\n*/\r\n\r\n// Estandar de comentarios\r\n// Se usa el formato NatSpec\r\n// https://docs.soliditylang.org/en/v0.8.13/natspec-format.html\r\n\r\n/// @title <Titulo del contrato>\r\n/// @author <Autor del contrato>\r\n/// @notice <Explicar lo que hace el contrato o funcion>\r\n/// @dev <Detalles adicionales sobre el contrto o funcion>\r\n/// @param <nombre_parametro> <Describir para que sirve el parametro>\r\n/// return <valor_retorno> <Describir para que sirve el valor de retorno>\r\n\r\n\r\n// Herencia\r\n// Se basa en heredar funciones de otros Smart Contracts\r\n/*\r\n\r\n    contract <nombre_contrato> is >nombre_contrato_heredado> {\r\n        ...\r\n    }\r\n\r\n*/\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"intro.sol": {
+				"ast": {
+					"absolutePath": "intro.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.8",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:31:0"
+						}
+					],
+					"src": "35:1498:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
